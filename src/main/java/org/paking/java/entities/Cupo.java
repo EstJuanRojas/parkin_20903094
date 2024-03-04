@@ -2,7 +2,7 @@ package org.paking.java.entities;
 
 public class Cupo {
 
-    public char nombre;
+    private char nombre;
 
     //Constructor por defecto 
     public Cupo() {
@@ -10,6 +10,15 @@ public class Cupo {
 
     //Constructor parametrizado
     public Cupo(char nombre) {
+        this.nombre = nombre;
+    }
+    // Getters y setters
+    
+    public char getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(char nombre) {
         this.nombre = nombre;
     }
 
